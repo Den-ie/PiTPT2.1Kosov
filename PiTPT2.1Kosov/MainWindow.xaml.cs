@@ -27,7 +27,7 @@ namespace PiTPT2._1Kosov
 
         private void Answering(object sender, RoutedEventArgs e)
         {
-
+            // int
         }
     }
 }
