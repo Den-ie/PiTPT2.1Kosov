@@ -1,0 +1,184 @@
+﻿<Window x:Class="PiTPT2._1Kosov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PiTPT2._1Kosov"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox  Header="Первая прямая"
+                   Margin="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBox x:Name="FirstX1"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+                <TextBox x:Name="FirstY1"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+                <TextBox x:Name="FirstZ1"
+                         Grid.Row="2"
+                         Grid.Column="1"
+                         Margin="10"/>
+                
+                <TextBox x:Name="FirstX2"
+                         Grid.Row="4"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+                <TextBox x:Name="FirstY2"
+                         Grid.Row="5"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+                <TextBox x:Name="FirstZ2"
+                         Grid.Row="6"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+                
+                <TextBlock Text="X1"
+                           Margin="8"/>
+
+
+                <TextBlock Text="Y1"
+                           Margin="8"
+                           Grid.Row="1"/>
+
+
+                <TextBlock Text="Z1"
+                           Margin="8"
+                           Grid.Row="2"/>
+                
+                <TextBlock Text="X2"
+                           Grid.Row="4"
+                           Margin="8"/>
+
+
+                <TextBlock Text="Y2"
+                           Margin="8"
+                           Grid.Row="5"/>
+
+
+                <TextBlock Text="Z2"
+                           Margin="8"
+                           Grid.Row="6"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox  Header="Вторая прямая"
+                   Grid.Column="1"
+                   Margin="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition Height="0.5*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBox x:Name="SecondX1"
+                         Grid.Row="0"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+                <TextBox x:Name="SecondY1"
+                         Grid.Row="1"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+                <TextBox x:Name="SecondZ1"
+                         Grid.Row="2"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+                <TextBox x:Name="SecondX2"
+                         Grid.Row="4"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+                <TextBox x:Name="SecondY2"
+                         Grid.Row="5"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+                <TextBox x:Name="SecondZ2"
+                         Grid.Row="6"
+                         Grid.Column="1"
+                         Margin="10"/>
+
+
+                <TextBlock Text="X1"
+                           Margin="8"/>
+
+
+                <TextBlock Text="Y1"
+                           Margin="8"
+                           Grid.Row="1"/>
+
+
+                <TextBlock Text="Z1"
+                           Margin="8"
+                           Grid.Row="2"/>
+
+                <TextBlock Text="X2"
+                           Grid.Row="4"
+                           Margin="8"/>
+
+
+                <TextBlock Text="Y2"
+                           Margin="8"
+                           Grid.Row="5"/>
+
+
+                <TextBlock Text="Z2"
+                           Margin="8"
+                           Grid.Row="6"/>
+            </Grid>
+        </GroupBox>
+
+        <Button Grid.ColumnSpan="2"
+                Grid.Row="2"
+                Margin="50,5"
+                Content="Узнать сведения о прямых"
+                x:Name="AnswerButton"
+                Click="Answering"/>
+    </Grid>
+</Window>
